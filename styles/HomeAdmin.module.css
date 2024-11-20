@@ -1,0 +1,104 @@
+/* Fondo general */
+.container {
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título principal */
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffcc00; /* Amarillo brillante */
+  }
+  
+  /* Secciones (platillos y menú) */
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Amarillo brillante */
+    text-align: center;
+  }
+  
+  /* Estilo del carrusel */
+  .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #2b2b2b; /* Gris oscuro */
+    border: 2px solid #3e3e3e; /* Borde gris más oscuro */
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #ffffff;
+  }
+  
+  /* Botones de acción (eliminar, agregar) */
+  .actionButton {
+    background-color: #ffcc00; /* Amarillo brillante */
+    color: #1e1e1e; /* Texto oscuro */
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .actionButton:hover {
+    background-color: #e6b800; /* Amarillo más oscuro */
+  }
+  
+  /* Botón para subir archivos */
+  .uploadButton {
+    display: inline-block;
+    background-color: #ffcc00; /* Amarillo brillante */
+    color: #1e1e1e; /* Texto oscuro */
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .uploadButton:hover {
+    background-color: #e6b800; /* Amarillo más oscuro */
+  }
+  
+  /* Input de archivo oculto */
+  .fileInput {
+    display: none;
+  }
+  

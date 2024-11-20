@@ -1,0 +1,27 @@
+.footer {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar el contenido */
+    padding: 20px 0; /* Espaciado */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .socialIcons {
+    margin-top: 10px; /* Espaciado entre el texto y los íconos */
+    display: flex;
+    gap: 15px; /* Espacio entre los íconos */
+  }
+  
+  .socialIcons a {
+    transition: transform 0.3s;
+  }
+  
+  .socialIcons a:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+  }
+  
