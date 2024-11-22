@@ -20,7 +20,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     width: 400px; /* Establecer un tamaño adecuado */
     margin: 0 auto; /* Centrado */
-    z-index: 10000; /* Asegura que el contenido del modal esté encima del overlay */
+    
   }
 
   /* Alerta dentro del contenedor */
@@ -30,7 +30,7 @@ body {
     color: rgb(214, 162, 4);
     font-size: 18px;
     margin-bottom: 20px;
-    z-index: 9999; /* Asegura que el contenido del modal esté encima del overlay */
+    
   }
 
     /* Contenedor de los botones */
