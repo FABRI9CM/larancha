@@ -15,12 +15,24 @@ const HomeAdmin: React.FC = () => {
     { src: "/plat3.jpg", name: "Casado", description: "Plato tradicional con arroz, carne y ensalada.", price: 8.99 },
   ]);
 
+<<<<<<< HEAD
   const [showAddProduct, setShowAddProduct] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [selectedDish, setSelectedDish] = useState(null);
   const [showDeleteProduct, setShowDeleteProduct] = useState(false);
   const [showEditProduct, setShowEditProduct] = useState(false); // Nuevo estado para editar
   const [selectedDishIndex, setSelectedDishIndex] = useState<number | null>(null);
+=======
+  const [menuImages, setMenuImages] = useState([
+    { src: "/foto1.png", name: "Foto 1" },
+    { src: "/foto2.png", name: "Foto 2" },
+    { src: "/foto3.png", name: "Foto 3" },
+    { src: "/foto4.png", name: "Foto 4" },
+    { src: "/foto5.png", name: "Foto 5" },
+
+    { src: "/foto9.png", name: "Foto 9" }
+  ]);
+>>>>>>> 6f2034e919bb903c017fb52514af7992b3afbe11
 
   const handleAddDishClick = () => {
     setShowAddProduct(true);
