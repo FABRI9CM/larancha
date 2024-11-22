@@ -17,9 +17,7 @@ const HomeAdmin = () => {
     { src: "/foto3.png", name: "Foto 3" },
     { src: "/foto4.png", name: "Foto 4" },
     { src: "/foto5.png", name: "Foto 5" },
-    { src: "/foto6.png", name: "Foto 6" },
-    { src: "/foto7.png", name: "Foto 7" },
-    { src: "/foto8.png", name: "Foto 8" },
+
     { src: "/foto9.png", name: "Foto 9" }
   ]);
 
