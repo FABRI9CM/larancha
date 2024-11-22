@@ -1,43 +1,46 @@
 "use client";
-
+import { useEffect } from 'react';
 import { useState } from "react";
 import CarruselMenu from "../components/CarruselMenu";
 import CarruselPlatillos from "../components/CarruselPlatillos";
 import styles from "../../styles/HomeClient.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import CarruselMenuEspecial from "../components/CarruselMenuEspecial";
 
 const HomeClient = () => {
-  const [view, setView] = useState<"menu" | "platillos">("menu");
+  // Aquí es donde colocas el hook useEffect
+  useEffect(() => {
+    const element = document.getElementById('elementId');
+    if (element) {
+      element.removeChild(someChild);
+    }
+  }, []); // Solo se ejecuta una vez cuando el componente se monta
 
   return (
     <>
       <Header />
 
       <div className={styles.carouselContainer}>
-        <div className={styles.menuButtons}>
-          <button
-            className={`${styles.menuButton} ${
-              view === "menu" ? styles.activeButton : ""
-            }`}
-            onClick={() => setView("menu")}
-          >
-            Conocer Menú
-          </button>
-          <button
-            className={`${styles.menuButton} ${
-              view === "platillos" ? styles.activeButton : ""
-            }`}
-            onClick={() => setView("platillos")}
-          >
-            Ver Platillos
-          </button>
-        </div>
+        {/* Sección Carrusel Menú */}
+        <section className={styles.section}>
+          <CarruselMenu />
+          <h2 className={styles.sectionTitle}>Conocer Menú</h2>
+        </section>
 
-        <div className={styles.carouselDisplay}>
-          {view === "menu" ? <CarruselMenu /> : <CarruselPlatillos />}
-        </div>
+        {/* Sección Carrusel Platillos */}
+        <section className={styles.section}>
+          <CarruselPlatillos />
+          <h2 className={styles.sectionTitle}>Platillos</h2>
+        </section>
       </div>
+
+      {/* Sección Carrusel Menú Especial */}
+      <section className={styles.section}>
+        <CarruselMenuEspecial />
+        <h2 className={styles.sectionTitle}>Menús Especiales</h2>
+
+      </section>
 
       <Footer />
     </>

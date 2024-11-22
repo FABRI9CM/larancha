@@ -11,9 +11,7 @@ const CarruselMenu = () => {
     "foto4.png",
     "foto5.png",
     "foto6.png",
-    "foto7.png",
-    "foto8.png",
-    "foto9.png",
+    
   ]; // Nombres de las imágenes en /public
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,22 +29,24 @@ const CarruselMenu = () => {
   };
 
   return (
-    <div className={styles.carouselContainer}>
-      <div className={styles.imageWrapper}>
-        <img
-          src={`/${images[currentIndex]}`}
-          alt={`Foto ${currentIndex + 1}`}
-          className={styles.image}
-        />
+    <div className={styles.carouselWrapper}>
+      <button className={styles.arrowButtonLeft} onClick={prevImage}>
+        ◀
+      </button>
+
+      <div className={styles.carouselContainer}>
+        <div className={styles.imageWrapper}>
+          <img
+            src={`/${images[currentIndex]}`}
+            alt={`Foto ${currentIndex + 1}`}
+            className={styles.image}
+          />
+        </div>
       </div>
-      <div className={styles.controls}>
-        <button className={styles.button} onClick={prevImage}>
-          ◀
-        </button>
-        <button className={styles.button} onClick={nextImage}>
-          ▶
-        </button>
-      </div>
+
+      <button className={styles.arrowButtonRight} onClick={nextImage}>
+        ▶
+      </button>
     </div>
   );
 };

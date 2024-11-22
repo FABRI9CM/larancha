@@ -1,52 +1,67 @@
-.carouselContainer {
+.carouselWrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 300px;
-  margin: auto;
+  width: 100%;
+  overflow: hidden; /* Para que no se desborden las imágenes */
+}
+
+.carouselContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Las imágenes estarán centradas sin mucho espacio entre ellas */
+  width: 100%;
+  transition: transform 0.5s ease; /* Transición suave para el deslizamiento */
 }
 
 .imageWrapper {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
+  width: 280px; /* Disminuimos un poco el tamaño de las imágenes */
+  height: 200px; /* Altura fija para las imágenes */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que las imágenes se desborden */
+  position: relative;
+  margin: 0 15px; /* Agregamos margen entre las imágenes para que no se peguen */
 }
 
 .image {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 100%;
+  object-fit: cover; /* Las imágenes no se distorsionan, se ajustan al contenedor */
 }
 
 .name {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.controls {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-}
-
-.button {
-  padding: 10px 20px;
   font-size: 1rem;
-  background-color: #e6b800;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  color: #333;
+  text-align: center;
 }
 
-.button:hover {
-  background-color: #e6b800;
+.arrowButtonLeft,
+.arrowButtonRight {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #c9b241;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+
+.arrowButtonLeft {
+  left: 10px;
+}
+
+.arrowButtonRight {
+  right: 10px;
+}
+
+.arrowButtonLeft:hover,
+.arrowButtonRight:hover {
+  transform: scale(1.2);
 }

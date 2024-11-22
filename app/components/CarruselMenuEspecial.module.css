@@ -1,0 +1,126 @@
+/* Estilos generales del carrusel */
+.carouselWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra el carrusel horizontalmente */
+    align-items: center;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  }
+  
+  .carouselContainer {
+    display: flex;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    justify-content: center; /* Asegura que las imágenes estén centradas dentro del contenedor */
+  }
+  
+  .imageWrapper {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 250px; /* Ajusta el tamaño de las imágenes */
+    height: 300px; /* Ajusta el tamaño de las imágenes */
+    margin-right: 20px; /* Agrega espacio entre las imágenes */
+  }
+  
+  .imageWrapper:hover {
+    transform: scale(1.05); /* Escala las imágenes al pasar sobre ellas */
+  }
+  
+  .image {
+    width: 100%; /* Ocupa todo el espacio del contenedor */
+    height: 100%; /* Se adapta al tamaño del contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto */
+  }
+  
+  .arrowButtonLeft, .arrowButtonRight {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+  }
+  
+  .arrowButtonLeft {
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .arrowButtonRight {
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  /* Estilos del modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(50, 50, 50, 0.9); /* Fondo gris oscuro con opacidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: #333333; /* Fondo gris oscuro para el contenido del modal */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .modalImageContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .modalImageSmall {
+    width: 150px; /* Imagen más pequeña */
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px; /* Espacio entre la imagen y la información */
+  }
+  
+  .productInfo {
+    color: yellow; /* Color de las letras en amarillo */
+    background-color: #444444; /* Fondo gris oscuro para el área de información */
+    padding: 15px; /* Espaciado dentro del área de información */
+    border-radius: 5px; /* Bordes redondeados para la caja de información */
+  }
+  
+  .productInfo h2 {
+    font-size: 1.5rem;
+  }
+  
+  .productInfo p {
+    font-size: 1.2rem;
+  }
+  
+  .productPrice {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .closeModal {
+    background-color: #c9b241;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .closeModal:hover {
+    background-color: #9e8b2a;
+  }
+  

@@ -4,9 +4,9 @@ import { useState } from "react";
 import styles from "./CarruselMenuEspecial.module.css";
 
 const menuEspecial = [
-  { src: "/pla1.jpeg", name: "", description: "Un delicioso sándwich con pollo crujiente y más..." },
-  { src: "/pla2.jpg", name: "  ", description: "Sándwich picante con pollo crujiente..." },
-  { src: "/plat3.jpg", name: "  ", description: "Sándwich deluxe con pollo crujiente..." },
+  { src: "/Me1.png", name: "", description: "Un delicioso sándwich con pollo crujiente y más..." },
+  { src: "/Me2.png", name: "  ", description: "Sándwich picante con pollo crujiente..." },
+  { src: "/Me3.png", name: "  ", description: "Sándwich deluxe con pollo crujiente..." },
 ];
 
 const CarruselMenuEspecial = () => {

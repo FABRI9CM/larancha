@@ -1,33 +1,41 @@
-/* Parte superior del header */
 .header {
-    background-color: black; /* Fondo negro para todo el header */
-    color: white; /* Texto blanco por defecto en el header */
-    padding: 10px 0; /* Espaciado vertical */
-  }
-  
-  .navList {
-    list-style-type: none;
-    display: flex;
-    justify-content: center; /* Centra los elementos */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navItem {
-    margin: 0 20px; /* Espaciado horizontal entre los elementos */
-  }
-  
-  .navItem a {
-    color: yellow; /* Color amarillo para las letras */
-    text-decoration: none; /* Elimina el subrayado */
-    padding: 10px 20px; /* Padding alrededor del texto */
-    background-color: black; /* Fondo negro para los botones */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el color y el brillo */
-  }
-  
-  .navItem a:hover {
-    color:  #f0a500; /* Color amarillo brillante al pasar el mouse */
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Efecto de brillo alrededor del texto */
-  }
-  
+  background-color: black; /* Fondo negro para todo el header */
+  color: white; /* Texto blanco por defecto en el header */
+  padding: 5px 0; /* Reducción de espaciado vertical */
+  position: fixed; /* Hace que el header esté fijo en la parte superior */
+  top: 0; /* Se posiciona en la parte superior */
+  left: 0; /* Se posiciona en el borde izquierdo */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  z-index: 1000; /* Asegura que el header esté encima de otros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ligera para destacar el header */
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Centra los elementos */
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  margin: 0 15px; /* Reducir el espaciado horizontal entre los elementos */
+}
+
+.navItem a {
+  color: yellow; /* Color amarillo para las letras */
+  text-decoration: none; /* Elimina el subrayado */
+  padding: 8px 15px; /* Reducir el padding alrededor del texto */
+  background-color: black; /* Fondo negro para los botones */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el color y el brillo */
+}
+
+.navItem a:hover {
+  color: #f0a500; /* Color amarillo brillante al pasar el mouse */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Efecto de brillo alrededor del texto */
+}
+.logo {
+  width: 30px;  /* Ajusta el tamaño del logo */
+  height: 30px; /* Ajusta el tamaño del logo */
+}
